@@ -1,7 +1,7 @@
 import React from "react";
 import "./widgetheading.css";
 
-interface WidgetHeadingInterface {
+export interface WidgetHeadingInterface {
   category: string;
   title: string;
   wrapper?: React.ReactNode;

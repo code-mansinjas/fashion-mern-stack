@@ -1,0 +1,11 @@
+.catgy-list{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.categorywidget{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}

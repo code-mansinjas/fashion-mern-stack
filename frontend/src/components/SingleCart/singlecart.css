@@ -30,13 +30,27 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 55px;
+    width: auto;
     height: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     border-radius: 5px;
+    font-size: smaller;
+    padding: 0 5px;
+}
+
+.price-cont .pprice{
+    color: #DB4444;
+    font-size: 18px;
+}
+
+.price-cont .oprice{
+    margin-left: 15px;
+    color: #000;
+    opacity: 50;
+    font-size: 18px;
 }
 
 .addcart-cont{

@@ -1,7 +1,7 @@
 import "./singlecart.css";
 import { FaStar, FaRegHeart, FaHeart } from "react-icons/fa";
 
-interface SingleCartInterface {
+export interface SingleCartInterface {
   img?: string;
   title?: string;
   price?: number;
@@ -39,13 +39,13 @@ const SingleCart = ({
         <p className="price-cont">
           {discountPrice && price ? (
             <>
-              <span className="dprice">{discountPrice}</span>
+              <span className="pprice">{discountPrice}</span>
               <span className="oprice">
                 <del>{price}</del>
               </span>
             </>
           ) : (
-            <span>{price}</span>
+            <span className="pprice">{price}</span>
           )}
         </p>
         <p className="rating">

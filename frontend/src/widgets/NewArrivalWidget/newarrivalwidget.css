@@ -1,0 +1,76 @@
+.new-arrival-widget{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+/* Container for the items */
+.new-arrival-comp {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 280px);
+    grid-template-areas:
+        "firstItem firstItem secondItem secondItem"
+        "firstItem firstItem thirdItem fourthItem";
+    gap: 20px;
+    height: 600px;
+    width: 100%;
+}
+
+/* Styling for individual items */
+.firstItem {
+    grid-area: firstItem;
+    background-color: #000;
+
+}
+
+.secondItem {
+    grid-area: secondItem;
+    background-color: #000;
+}
+
+.thirdItem {
+    grid-area: thirdItem;
+    background-color: #000;
+}
+
+.fourthItem {
+    grid-area: fourthItem;
+    background-color: #000;
+}
+
+/* Image container inside each item */
+.img-cont {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+    /* Ensure the image covers the entire area */
+}
+
+.img-out-cont {
+    position: relative;
+    height: 100%;
+}
+
+.img-out-cont .img-title{
+    font-size: 24px;
+}
+.img-out-cont .img-desc{
+    font-size: 16px;
+}
+.img-out-cont .shop-btn{
+    font-size: 18px;
+    color: #fff;
+    background-color: inherit;
+    border-bottom: 1px solid #fff;
+}
+
+.img-desc-cont {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
