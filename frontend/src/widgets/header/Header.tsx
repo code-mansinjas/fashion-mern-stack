@@ -1,5 +1,5 @@
-import React from "react";
 import "./header.css";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   return (
@@ -29,11 +29,18 @@ const Menu = () => {
 };
 
 const HeaderRightSection = () => {
+  const cartList = useSelector((state: any)=> state?.cartList)
   return (
     <div className="hrs">
       <SearchBox />
+      <div>
       <img src="/wishlist.png" />
+      </div>
+      <div>
       <img src="/cart.png" />
+      {cartList?.length || ""}
+      </div>
+     
     </div>
   );
 };

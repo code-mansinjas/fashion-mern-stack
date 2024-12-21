@@ -4,11 +4,16 @@ import React from "react";
 const Home = React.lazy(()=> import('./pages/home/Home'))
 const About = React.lazy(()=> import('./pages/About'))
 const Contact = React.lazy(()=> import('./pages/Contact'))
+const Redux = React.lazy(()=> import('./pages/redux/Redux'))
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Home/>
+    },
+    {
+        path: '/redux',
+        element: <Redux/>
     },
     {
         path: '/contact-us',

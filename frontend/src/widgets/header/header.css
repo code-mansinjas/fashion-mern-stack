@@ -20,6 +20,7 @@
 .header-outer{
     border-bottom: 1px solid black;
     width: 100vw;
+    z-index: 1;
 }
 
 .menus{
